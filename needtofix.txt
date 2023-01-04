@@ -1,0 +1,21 @@
+sắp xếp theo tên, nếu kí tự cuối là số, so sánh chữ thứ 2
+set id =  id lớn nhất hiện có + 1 : ok
+add tên employee, nếu trùng thêm số
+add tên email nếu trùng thêm số
+
+
+4/1/2022
+1. Sắp xếp lại các hàm
+các hàm có trong project:
+1/ hàm renderEmployees(listElementShowed) => return innerHTML
+2/ Hàm listElementShowedPerPage(currentPage, perPage) => return 1 mảng, mảng này sẽ được render ra màn hình tạo currentpage
+3/ Hàm renderCurrentPage(listElementShowed.length) => return ra số lượng element và số elemnet đang hiển thị: 1-40/160
+4/ Hàm nextPage(currentPage)
+5/ Hàm previousPage(currenPage)
+6/ Hàm sortEmployeeAz(listElementShowed)
+7/ Hàm sortEmployeeZa(listElementShowed)
+
+8/ Hàm getAvatar(name) => return chữ cái đầu tê
+9/ Hàm filterEmployee(allEmployees) => return ra mảng listElementShowed
+
+2. thêm tính năng tìm kiếm dựa trên vị trí, email

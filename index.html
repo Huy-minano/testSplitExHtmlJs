@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7f51584e70.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Clone employee page</title>
+  </head>
+
+  <body>
+    <div id="Wrapper">
+      <!-- Navbar -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">Dashboard</li>
+          <li class="nav-item">Tax Finalization</li>
+          <li class="nav-item">Calendar</li>
+          <li class="nav-item">Working Timesheet</li>
+          <li class="nav-item">Appraisals</li>
+          <li class="nav-item">Project</li>
+          <li class="nav-item">Timesheets</li>
+          <li class="nav-item" style="background-color: black; color: #ffff">
+            Employees
+          </li>
+          <li class="nav-item">Helpdesk</li>
+          <li class="nav-item">Personal Infor</li>
+        </ul>
+        <ul class="nav-list">
+          <li class="nav-item fa-solid fa-clock"></li>
+          <li class="nav-item fa-solid fa-comment"></li>
+          <li class="nav-item"><img src="img/avatar_nho.png" alt="" /></li>
+          <li class="nav-item">Nguyễn Văn A</li>
+        </ul>
+      </nav>
+      <!-- End Navbar -->
+      <!-- Content -->
+      <div class="content">
+        <div class="side-bar">
+          <img src="img/ntq_logo.png" alt="" />
+          <div class="employee">Employees</div>
+          <ul class="about-employee">
+            <li style="background-color: #7c7bad; color: #ffff">Employees</li>
+            <li>Adjust Employee</li>
+            <li>Members Birthday</li>
+          </ul>
+          <div class="departments">Departments</div>
+          <div class="departments">Termination Request</div>
+        </div>
+        <div class="main-content">
+          <div class="top-content">
+            <div class="right">
+              <div class="right-top">
+                <h3>Employees</h3>
+              </div>
+              <div class="add-employee">
+                <input
+                  class="input-add-employee"
+                  placeholder="New Employee"
+                  type="text"
+                />
+                <input class="input-add-job" placeholder="Job" type="text" />
+                <button class="btn-add-employee">Add</button>
+              </div>
+            </div>
+            <div class="left">
+              <div class="left-top">
+                <div class="find">
+                  <input
+                    class="filter-employee"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <div class="left-bottom">
+                <div class="left-bottom-left">
+                  <button class="sort_a-z">Sort A-Z</button>
+                  <button class="sort_z-a">Sort Z-A</button>
+                </div>
+                <div class="left-bottom-right">
+                  <div class="currentPage"></div>
+                  <div class="sort">
+                    <button class="previousPage">
+                      <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="nextPage">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <div class="kanban-list">
+                    <button class="kanban">
+                      <i class="fa-solid fa-table"></i>
+                    </button>
+                    <button class="list">
+                      <i class="fa-solid fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="listEmployee"></div>
+        </div>
+      </div>
+      <!-- End Content -->
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
